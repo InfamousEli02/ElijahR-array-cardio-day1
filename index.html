@@ -6,6 +6,72 @@
   <link rel="icon" href="https://fav.farm/🔥" />
 </head>
 <body>
+  <!-- Research Notes -->
+
+   <!-- filter() - creates a shallow copy of a portion of an array, filtered down to just
+   the elements of the array that pass a condition given by a function. Calls a
+   provided callbackFn function once for each element in an array, and creates a
+   new array of all the values which callbackFn returns true. Elements that don't
+   pass aren't included.  -->
+
+   <!-- shallow copy = a copy whose properties share the same references(a link to an object) 
+   as those of the source object that the copy comes from. If you change the source or 
+   the copy, you may cause the other to change too. They are still connected.
+   
+   two objects are shallow copies if they are not the same object(o1 !== o2), the properties have the
+   same name in the same order, the values of their properties are equal and their
+   prototype chains are equal
+   
+   only the top-level properties are copied, not the values of nested objects.
+   -->
+
+   <!-- deep copy = a copy whose properties do NOT share the same references as those of
+   the source object that the copy comes from. They are independent and changing one
+   does not change the other. All the values of the new variable are copied and not
+   connected to the original variable.
+   
+   Not the same objects(o1 !== o2), the properties of the objects have the same name in 
+   the same order, the values of their properties are deep copies of each other,
+   and their prototype chains are structurally equivalent
+   -->
+
+   <!-- map() - creates a new array containing the results of calling a function
+    on every element in the array. Calls a provided callbackFn function once for
+    each element in an array and creates a new array from the results. -->
+
+   <!-- sort() - sorts the elements of an array in place and returns the reference
+    to the same array now sorted. No copy is created.Method preserves empty slots.
+    
+    If compareFn is not supplied, all non-undefined array elements are sorted by 
+    converting them to strings and comparing strings in UTF-16 code units order. 
+    
+    If the array is sparse(arrays containing "empty slots", which aren't the same as 
+    slots with undefined values ), empty slots are moved to the end of the array and 
+    always come after the undefined. For example, "banana" comes before "cherry". 
+    9 comes before 80 but "80" comes before "9" because numbers are converted to strings 
+    in the unicode order. All undefined elements are sorted to the end of the array. 
+    
+    If compareFn is supplied, all non-undefined elements are sorted according to the
+    return value of the compare function(undefined elements sorted to the end, with
+    no call to compareFn). -->
+
+    <!-- reduce() - executes a user-supplied "reducer" callback function on each element
+    of an array, in ascending-index order, passing in the return value from the calculation
+    on the preceding element. The final result of running the reducer across all of an array's
+    elements is a single value. 
+    
+    Every time, the return value of callbackFn passes into callbackFn again on next invocation 
+    as "accumulator". The final value of accumulator (the final value returned from callbackFn 
+    on the last iteration of the array) becomes the return value of reduce().  
+    
+    callbackFn is invoked only for array indexes which have assigned values. it is not
+    invoked for empty slots. 
+    
+    reduce() doesn't accept a thisArg argument. callbackFn is always called with undefined
+    as "this", which gets substituted with globalThis if callbackFn is non-strict. -->
+
+  <!-- Research Notes END -->
+
   <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
   <script>
     // Get your shorts on - this is an array workout!
